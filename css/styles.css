@@ -208,7 +208,7 @@ img {
 
 .main-page {
   background-color: #2e2f42;
-  padding: 188px 0;
+  padding: 72px 0;
 
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -224,6 +224,21 @@ img {
 
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .main-page{
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-officex2.jpg); 
+    }
+  
+}
+  
+
+
 .main-title {
   color: #fff;
   text-align: center;
@@ -231,7 +246,7 @@ img {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
 
@@ -257,6 +272,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 
+  
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -969,6 +985,24 @@ text-decoration-line: underline;
 
 
 /* hero */
+.main-page{
+  padding: 188px 0;
+
+  background-color: #2e2f42;
+  
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+    margin: auto;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
 
 .main-title {
   color: #fff;
@@ -976,12 +1010,13 @@ text-decoration-line: underline;
   font-size: 56px;  
   line-height: 1.07;
   letter-spacing: 0.02em;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
   margin-left: auto;
   margin-right: auto;
 
   text-align: center;
   max-width: 496px;
+ 
 }
 }
 
@@ -1025,5 +1060,7 @@ text-decoration-line: underline;
 
 /* hero */
 
-
+.main-title {
+  margin-bottom: 48px; 
+}
 }
