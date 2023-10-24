@@ -32,16 +32,18 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  max-width: 100%;  
+  height: auto;
+  width: 100%;
 }
 
 /*----------Header---------*/
 
 .container {
-  max-width: 1158px;
+  max-width: 320px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px 0 15px;
+  padding: 0 16px 0 16px;
 
 }
 
@@ -66,6 +68,8 @@ img {
 
 .header-container {
   display: flex;
+  align-items: center;
+  
 }
 
 
@@ -78,7 +82,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
-  padding: 24px 0;
+  padding: 17px 0;
 }
 
 
@@ -90,7 +94,7 @@ img {
 
 .header-list {
   color: #404bbf;
-  display: flex;
+  display: none;
   gap: 40px;
   align-items: center;
   justify-content: center;
@@ -150,21 +154,18 @@ img {
 }
 
 .address-list {
-  display: flex;
+  display: none;
   align-items: center;
-  gap: 40px;
-}
-
-.address-list-item {
-  padding: 24px 0;
   
 }
 
+
+
 .address-list-link {
   color: #434455;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -178,6 +179,30 @@ img {
   color: #404bbf;
 }
  
+
+.header-btn{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+  border: none;
+  cursor: pointer;
+
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #FFF;
+  padding: 0;
+  
+}
+.header-btn-icon{
+  
+}
+.header-btn:focus,
+.header-btn:hover{
+  
+}
+
 
 /*-------main------*/
 
@@ -202,16 +227,16 @@ img {
 .main-title {
   color: #fff;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
 
   text-align: center;
-  max-width: 496px;
+  max-width: 280px;
 }
 
 .button {
@@ -898,4 +923,107 @@ text-decoration-line: underline;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+
+
+/* ================media================= */
+@media screen (min-width:320px) {
+  
+}
+
+
+
+
+
+
+/* header */
+@media screen and (min-width: 768px) {
+  .container { 
+    max-width: 768px;
+    padding: 0 16px 0 16px;
+
+  }
+  .header-logo{
+    margin-right: 120px;
+    
+  }
+
+.header-list {   
+  display: flex;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.header-btn{
+  display: none;
+}
+
+
+/* hero */
+
+.main-title {
+  color: #fff;
+  text-align: center;
+  font-size: 56px;  
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  max-width: 496px;
+}
+}
+
+
+
+/* header */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;   
+    padding: 0 15px 0 15px;
+
+  }
+
+  .header-logo {
+    margin-right: 76px;
+    padding: 24px 0;
+  }
+  
+  .address-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.address-list-item {
+  padding: 24px 0;
+  
+}
+
+.address-list-link {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+     
+  }
+
+/* hero */
+
+
 }
