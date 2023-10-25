@@ -351,8 +351,6 @@ width: 288px;
 
 /*-------section 2------*/
 .team {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   background-color: #f4f4fd;
   padding: 96px 0;
 }
@@ -372,6 +370,7 @@ width: 288px;
   display: flex;
   flex-wrap: wrap; 
   align-items: center;
+  justify-content: center;
   gap: 72px;
 
   
@@ -453,7 +452,7 @@ width: 288px;
 /**-------section 3------*/
 
 .portfolio {
-  padding: 120px 0 120px 0;
+  padding: 96px 0;
 }
 
 .portfolio-title {
@@ -1047,6 +1046,7 @@ text-decoration-line: underline;
 .advant-list-title {
   text-align: start;
 }
+
 /* team section 2 */
 
 .team-list {   
@@ -1058,7 +1058,12 @@ text-decoration-line: underline;
   
 }
 
+
+/* portfolio section 3 */
 }
+
+
+
 
 /* header */
 @media screen and (min-width: 1158px) {
@@ -1096,6 +1101,8 @@ text-decoration-line: underline;
      
   }
 
+
+
 /* hero main page */
 
 .main-title {
@@ -1105,6 +1112,8 @@ text-decoration-line: underline;
 .main-page {
   padding: 188px 0;
 }
+
+
 /* advant section 1 */
 
 .advant {
@@ -1137,6 +1146,8 @@ text-decoration-line: underline;
 .advant-list-article {
   font-weight: 400;
 }
+
+
 /* team section 2 */
 .team {
   padding: 120px 0;
@@ -1148,4 +1159,12 @@ text-decoration-line: underline;
 .team-list-item {
   width: calc((100% - 72px) / 4);
 }
+
+
+
+/* portfolio section 3 */
+
+.portfolio {
+  padding: 120px 0;
+
 }
