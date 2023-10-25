@@ -283,7 +283,7 @@ img {
 
 /**--------section 1-------*/
 .advant {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .visually-hidden {
@@ -300,33 +300,39 @@ img {
 }
 
 .advant-title {
+ 
 }
 
 .advant-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 72px;
+
 }
 .advant-list-item {
-  width: calc((100% - 72px) / 4);
+width: 288px;
+  
 }
 
-.advant-list-title {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+.advant-list-title {  
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.12; /* 111.111% */
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   margin-bottom: 8px;
 }
 
 .advant-list-article {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 .advant-box{  
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -984,9 +990,9 @@ text-decoration-line: underline;
 }
 
 
-/* hero */
+/* hero main page */
 .main-page{
-  padding: 188px 0;
+  padding: 112px 0;
 
   background-color: #2e2f42;
   
@@ -1018,6 +1024,25 @@ text-decoration-line: underline;
   max-width: 496px;
  
 }
+/* advant section 1 */
+
+.advant {
+
+}
+
+.advant-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+
+}
+.advant-list-item {
+  width: calc((100% - 24px) / 2);
+} 
+.advant-list-title {
+  text-align: start;
+}
+/* team section 2 */
 }
 
 
@@ -1058,9 +1083,46 @@ text-decoration-line: underline;
      
   }
 
-/* hero */
+/* hero main page */
 
 .main-title {
   margin-bottom: 48px; 
 }
+
+.main-page {
+  padding: 188px 0;
+}
+/* advant section 1 */
+
+.advant {
+  padding: 120px 0;
+}
+
+.advant-list {  
+  gap: 24px;
+  
+
+}
+
+.advant-list-item {
+  width: calc((100% - 72px) / 4);
+  
+}
+
+.advant-box{
+  display: flex;
+}
+
+.advant-list-title {
+  text-align: start;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  
+}
+
+.advant-list-article {
+  font-weight: 400;
+}
+/* team section 2 */
 }
