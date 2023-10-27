@@ -48,7 +48,7 @@ img {
 }
 
 .header {
-  display: none;
+  display: flex;
   border-bottom: 1px solid #e7e9fc;
   background-color: #fff;
   color: #2e2f42;
@@ -219,6 +219,10 @@ img {
    
 
 }
+
+/* .header{
+  display: none;
+} */
 .mob-hed{
 width: 320px;
 min-height: 640px;
@@ -1051,9 +1055,11 @@ text-decoration-line: underline;
 .header-list {   
   display: flex;
 }
-.mob-hed{
+.mobil-modal{
   display: none;
 }
+
+
 
 /* header for mob */
 .header {
