@@ -1228,6 +1228,7 @@ gap: 72px 24px;
 .footer-strukture{
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: baseline;
   justify-content: flex-start;
   gap: 72px 24px;
   text-align: start;
