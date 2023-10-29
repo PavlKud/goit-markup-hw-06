@@ -221,7 +221,8 @@ img {
 
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;     
+  pointer-events: none;  
+  z-index: 1;   
   
   padding: 72px 24px 24px 24px;
 
@@ -282,6 +283,9 @@ text-transform: capitalize;
 
 
 .mob-hed-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   margin-bottom: 48px;
 }
  
@@ -296,9 +300,11 @@ font-weight: 500;
 line-height: 1.2; /* 120% */
 letter-spacing: 0.02em;
 
+
 }
 .tel{
   color: #4D5AE5;
+  
 }
 .mob-address-link:hover,
 .mob-address-link:focus {
