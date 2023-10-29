@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    
   </head>
   <body>
     <!-- Header -->
@@ -55,7 +56,7 @@
             </li>
           </ul>
 
-          <button type="button" class="header-btn">
+          <button type="button" class="header-btn js-open-menu">
             <svg class="header-btn-icon" wigth="24" height="24">
               <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
             </svg>
@@ -65,8 +66,8 @@
 
       <!-- for mobile -->
 
-      <div class="mob-hed is-open">
-        <button class="mobil-modal-btn" type="button">
+      <div class="mob-hed js-menu-container">
+        <button class="mobil-modal-btn js-close-menu" type="button">
           <svg class="mobil-btn-icon" widht="8" height="8">
             <use href="./images/icons.svg#icon-close-2"></use>
           </svg>
@@ -152,7 +153,9 @@
           </ul>
         </div>
       </div>
+     
     </header>
+    
 
     <!--Page-->
 
@@ -899,5 +902,6 @@
         </form>
       </div>
     </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
   </body>
 </html>
