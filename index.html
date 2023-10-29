@@ -18,6 +18,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+
+
   </head>
   <body>
     <!-- Header -->
@@ -55,7 +57,7 @@
             </li>
           </ul>
           
-            <button type="button" class="header-btn">
+            <button type="button" class="header-btn js-open-menu">
             <svg class="header-btn-icon" wigth="24" height="24"><use
               href="./images/icons.svg#icon-heroicons-solid_menu"></use></svg>
           </button>
@@ -63,18 +65,18 @@
       </div>    
     
     <!-- for mobile -->
-   
-      <div class="mob-hed ">
-        <button class="mobil-modal-btn" type="button"><svg class="mobil-btn-icon" widht="8" height="8"><use href="./images/icons.svg#icon-close-2"></use></svg></button>
+    
+      <div class="mob-hed js-menu-container">
+        <button class="mobil-modal-btn js-close-menu" type="button"><svg class="mobil-btn-icon " widht="8" height="8"><use href="./images/icons.svg#icon-close-2"></use></svg></button>
         <ul class="mob-hed-list">
           <li class="mob-hed-item">
-            <a class="mob-hed-link current" href="./index.html">Studio</a>
+            <a class="mob-hed-link header-link current" href="./index.html">Studio</a>
           </li>
           <li class="mob-hed-item">
-            <a class="mob-hed-link" href="">Portfolio</a>
+            <a class="mob-hed-link header-link" href="">Portfolio</a>
           </li>
           <li class="mob-hed-item">
-            <a class="mob-hed-link" href="">Contacts</a>
+            <a class="mob-hed-link header-link" href="">Contacts</a>
           </li>
         </ul>
         <address class="mob-hed-address ">
@@ -145,7 +147,7 @@
           </div>  
       </div>
     </header>  
-   
+
 
     <!--Page-->
 
@@ -800,6 +802,6 @@
           <button type="submit" class="button">Send</button>
         </form>
       </div>
-    </div>
+    </div>   
   </body>
 </html>
